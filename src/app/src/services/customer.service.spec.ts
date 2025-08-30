@@ -28,7 +28,7 @@ describe('CustomerService', () => {
     });
 
     expect(httpClientSpy.put.calls.count()).toBe(1);
-    expect(httpClientSpy.put.calls.mostRecent().args[0]).toBe(`/customers/${id}`);
+    expect(httpClientSpy.put.calls.mostRecent().args[0]).toBe(`http://localhost:3000/customers/${id}`);
     expect(httpClientSpy.put.calls.mostRecent().args[1]).toEqual(body);
   });
 });

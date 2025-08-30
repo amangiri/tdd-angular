@@ -10,6 +10,6 @@ export class CustomerService {
   constructor(private http: HttpClient) { }
 
   updateFirstName(id: string, body: { firstName: string }) : Observable<any>{
-    return this.http.put<any>(`/customers/${id}`, body);
+    return this.http.put<any>(`http://localhost:3000/customers/${id}`, body);
   }
 }
