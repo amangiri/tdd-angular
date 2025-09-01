@@ -2,12 +2,11 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CustomerService } from '../../services/customer.service';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-customer',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, CommonModule, HttpClientModule],
+  imports: [FormsModule, ReactiveFormsModule, CommonModule],
   templateUrl: './customer.component.html',
   styleUrl: './customer.component.scss'
 })
